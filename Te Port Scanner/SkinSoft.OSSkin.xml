@@ -1,0 +1,494 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SkinSoft.OSSkin</name>
+    </assembly>
+    <members>
+        <member name="T:SkinSoft.OSSkin.SkinStyle">
+            <summary>
+            Specifies an OS skin style
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.XpBlue">
+            <summary>
+            Windows XP Blue
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.XpSilver">
+            <summary>
+            Windows XP Silver
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.XpOlive">
+            <summary>
+            Windows XP Olive
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.XpRoyale">
+            <summary>
+            Windows XP Royale (Media Center)
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.Office2007Blue">
+            <summary>
+            Office 2007 Blue
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.Office2007Black">
+            <summary>
+            Office 2007 Black
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.Office2007Silver">
+            <summary>
+            Office 2007 Silver
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.VistaBlue">
+            <summary>
+            Windows Vista Blue
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.VistaBlack">
+            <summary>
+            Windows Vista Black
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.VistaSilver">
+            <summary>
+            Windows Vista Silver
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.VistaAero">
+            <summary>
+            Windows Aero
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.AeroBlue">
+            <summary>
+            Windows Aero Blue
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.AeroBlack">
+            <summary>
+            Windows Aero Black
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.AeroSilver">
+            <summary>
+            Windows Aero Silver
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.MacOSXAqua">
+            <summary>
+            Mac OSX Aqua
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.MacOSXTiger">
+            <summary>
+            Mac OSX Tiger
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.MacOSXPanther">
+            <summary>
+            Mac OSX Panther
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.MacOSXLeopard">
+            <summary>
+            Mac OSX Leopard
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.MacOSXiTunes">
+            <summary>
+            Mac OSX iTunes
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.MacOSXSilver">
+            <summary>
+            Mac OSX Silver
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinStyle.MacOSXBrushed">
+            <summary>
+            Mac OSX Brushed
+            </summary>
+        </member>
+        <member name="T:SkinSoft.OSSkin.SkinMode">
+            <summary>
+            Specifies how the application is skinned.
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinMode.Manual">
+            <summary>
+            The application is skinned manually by calling the <see cref="M:SkinSoft.OSSkin.OSSkin.ApplySkin"/>
+            and <see cref="M:SkinSoft.OSSkin.OSSkin.RemoveSkin"/> methods for each form or control.
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.SkinMode.Automatic">
+            <summary>
+            All application forms and controls are automatically skinned.
+            </summary>
+        </member>
+        <member name="T:SkinSoft.OSSkin.TargetControls">
+            <summary>
+            Specifies what forms and controls are skinned.
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.TargetControls.None">
+            <summary>
+            Skin nothing
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.TargetControls.Forms">
+            <summary>
+            Skin only forms
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.TargetControls.Controls">
+            <summary>
+            Skin only controls
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.TargetControls.FormsAndControls">
+            <summary>
+            Skin forms and controls
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.TargetControls.TaggedControls">
+            <summary>
+            Skin only tagged controls
+            </summary>
+        </member>
+        <member name="T:SkinSoft.OSSkin.ToolStripRenderStyle">
+            <summary>
+            Specifies how ToolStrip controls are rendered.
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.ToolStripRenderStyle.System">
+            <summary>
+            ToolStrips are drawn using a system skinned renderer,  
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.ToolStripRenderStyle.Professional">
+            <summary>
+            ToolStrips are rendered using professional skinned colors.
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.ToolStripRenderStyle.Mixed">
+            <summary>
+            ToolStrips are drawn with a mix of system and professional styles.
+            </summary>
+        </member>
+        <member name="T:SkinSoft.OSSkin.ShadowStyle">
+            <summary>
+            Specifies a shadow style applied to forms
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.ShadowStyle.Small">
+            <summary>
+            Specifies a small shadow
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.ShadowStyle.Medium">
+            <summary>
+            Specifies a medium shadow
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.ShadowStyle.Bold">
+            <summary>
+            Specifies a bold shadow
+            </summary>
+        </member>
+        <member name="T:SkinSoft.OSSkin.OSSkin">
+            <summary>
+            <para>
+            OSSkin is powerful drop-in component that automatically skins any windows forms application 
+            from a choice of 18 embedded OS themes and styles. OSSkin uses an advanced skin engine that 
+            can skin all windows forms controls, scrollbars and common dialogs without requiring any changes 
+            to your projects or source code.
+            </para>
+            <para>
+            In order to skin your application you only need to drop this component onto the main form or the 
+            first visible form of your application at design-time.
+            </para>
+            <para>
+            Using the properties available on the OSSkin component you can determine which OS style to use, 
+            what forms and controls should be skinned and whether to apply translucent shadows to your forms.
+            </para>
+            <para>
+            Use the <see cref="P:SkinSoft.OSSkin.OSSkin.Style"/> property to determine which OS style should be used to skin your application.
+            Use the <see cref="P:SkinSoft.OSSkin.OSSkin.TargetControls"/> property to determine what forms or controls you wish to have the skin applied.
+            Use the <see cref="P:SkinSoft.OSSkin.OSSkin.ToolStripStyle"/> property to control the appearance of all <see cref="T:System.Windows.Forms.ToolStrip"/> controls in your application.
+            The <see cref="P:SkinSoft.OSSkin.OSSkin.ShadowVisible"/> and <see cref="P:SkinSoft.OSSkin.OSSkin.ShadowStyle"/> affects the visibility and appearance of the form shadow.
+            </para>
+            </summary>
+        </member>
+        <member name="F:SkinSoft.OSSkin.OSSkin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.#ctor">
+            <summary>
+            Initializes a new instance of the OSSkin component with the default
+            arguments
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the OSSkin component using the specified
+            <see cref="T:System.ComponentModel.IContainer"/>.
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.Dispose(System.Boolean)">
+            <summary> 
+            Disposes any resources used by the OSSkin component
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.BeginInit">
+            <exclude/>
+            <summary>
+            Begins the designer initialize action
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.EndInit">
+            <exclude/>
+            <summary>
+            Ends the designer initialize action
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.ShouldSerializeLicense">
+            <summary>
+            Determines if the component license should be serialized
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.Shutdown">
+            <summary>
+            Manually shuts down the skin engine and disposes all resources.
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.ApplySkin">
+            <summary>
+            Manually applies the skin to the entire application, the application skin
+            is restored using the current settings.
+            </summary>
+            <remarks>
+            You would typically call this method after a previous call to <see cref="M:SkinSoft.OSSkin.OSSkin.RemoveSkin"/>
+            to restore the application skin.
+            <para>
+            This method can be called anywhere in your application.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.ApplySkin(System.Windows.Forms.Form)">
+            <summary>
+            Manually applies the skin to the specified form.
+            </summary>
+            <remarks>
+            You would typically use this method to manually apply the skin to forms, or 
+            when the <see cref="T:SkinSoft.OSSkin.SkinMode"/> is set to <see cref="F:SkinSoft.OSSkin.SkinMode.Manual"/>.
+            <para>
+            This method can be called anywhere in your application.
+            </para>
+            </remarks>
+            <param name="form">The target Form</param>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.ApplySkin(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Manually applies the skin to the specified control and optional child controls.
+            </summary>
+            <remarks>
+            You would typically use this method to manually apply the skin to controls, or
+            when the <see cref="T:SkinSoft.OSSkin.SkinMode"/> is set to <see cref="F:SkinSoft.OSSkin.SkinMode.Manual"/>.
+            <para>
+            This method can be called anywhere in your application.
+            </para>
+            </remarks>
+            <param name="control">The target Control</param>
+            <param name="childControls">If true, then all child controls are affected; if false then just the control is affected.</param>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.RemoveSkin">
+            <summary>
+            Manually removes the skin from the entire application
+            </summary>
+            <remarks>
+            You can call this method anywhere in your application to remove the skin from all
+            forms and controls. You can restore the skin at anytime by calling the <see cref="M:SkinSoft.OSSkin.OSSkin.ApplySkin"/>
+            method.
+            </remarks>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.RemoveSkin(System.Windows.Forms.Form)">
+            <summary>
+            Manually removes the skin from the specified form. 
+            </summary>
+            <remarks>
+            You would typically use this method to manually remove the skin from a form, or
+            when the <see cref="T:SkinSoft.OSSkin.SkinMode"/> is set to <see cref="F:SkinSoft.OSSkin.SkinMode.Manual"/>.
+            <para>
+            This method can be called anywhere in your application.
+            </para>
+            </remarks>
+            <param name="form">The target form.</param>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.RemoveSkin(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Manually removes the skin from the specified control and optional child controls.
+            </summary>
+            <remarks>
+            You would typically use this method to manually remove the skin from a control, or
+            when the <see cref="T:SkinSoft.OSSkin.SkinMode"/> is set to <see cref="F:SkinSoft.OSSkin.SkinMode.Manual"/>.
+            <para>
+            This method can be called anywhere in your application.
+            </para>
+            </remarks>
+            <param name="control">The target Control</param>
+            <param name="childControls">If true, then all child controls are affected; if false then just the control is affected.</param>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.ValidateLicense(System.Boolean)">
+            <summary>
+            Validates the license using the specified design mode
+            </summary>
+            <param name="designMode"></param>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.BeginUpdate">
+            <exclude/>
+            <summary>
+            Maintains render performance whilst setting the <see cref="T:SkinSoft.OSSkin.OSSkin"/> properties,
+            and prevents any unnecessary skin painting until the <see cref="M:SkinSoft.OSSkin.OSSkin.EndUpdate"/> 
+            method is called.
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.EndUpdate">
+            <exclude/>
+            <summary>
+            Resumes skin rendering after painting is suspended by the <see cref="M:SkinSoft.OSSkin.OSSkin.BeginUpdate"/>
+            method.
+            </summary>
+        </member>
+        <member name="M:SkinSoft.OSSkin.OSSkin.Refresh">
+            <summary>
+            Refreshes the application skin using the current settings.
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.License">
+            <exclude/>
+            <summary>
+            Gets or sets the component license, this method is not intended to be used by
+            client code.
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.Site">
+            <summary>
+            Overridden, see <see cref="P:System.ComponentModel.Component.Site"/>
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.Style">
+            <summary>
+            Specifies the OS skin style to apply to all target controls
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.SkinMode">
+            <summary>
+            Specifies how application forms and controls will be skinned. <para></para>
+            Use <see cref="F:SkinSoft.OSSkin.SkinMode.Manual"/> to manually skin forms and controls.<para></para>
+            Use <see cref="F:SkinSoft.OSSkin.SkinMode.Automatic"/> to automatically skin all application forms and controls.<para></para>
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.TargetControls">
+            <summary>
+            Specifies which application controls will have the skin applied. <para></para>
+            Use <see cref="F:SkinSoft.OSSkin.TargetControls.None"/> to skin no application forms or controls,<para></para>
+            Use <see cref="F:SkinSoft.OSSkin.TargetControls.Forms"/> to skin only application forms,<para></para>
+            Use <see cref="F:SkinSoft.OSSkin.TargetControls.Controls"/> to skin only application controls,<para></para>
+            Use <see cref="F:SkinSoft.OSSkin.TargetControls.FormsAndControls"/> to skin all application forms and controls,<para></para>
+            Use <see cref="F:SkinSoft.OSSkin.TargetControls.TaggedControls"/> to skin all tagged application forms and controls,<para></para>
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.IncludeTag">
+            <summary>
+            Specifies a global include tag,<para></para>any <see cref="T:System.Windows.Forms.Control"/> or <see cref="T:System.Windows.Forms.Form"/>whose 
+            <see cref="P:System.Windows.Forms.Control.Tag"/> value matches this string will automatically get skinned, 
+            regardless of the <see cref="P:SkinSoft.OSSkin.OSSkin.TargetControls"/> setting.
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.ExcludeTag">
+            <summary>
+            Specifies a global tag,<para></para> any <see cref="T:System.Windows.Forms.Control"/> or <see cref="T:System.Windows.Forms.Form"/>whose 
+            <see cref="P:System.Windows.Forms.Control.Tag"/> value matches this string will automatically have the
+            skin removed, regardless of the <see cref="P:SkinSoft.OSSkin.OSSkin.TargetControls"/> setting.
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.SkinCommonDialogs">
+            <summary>
+            Specifies whether to skin the common dialog components, such as the <see cref="T:System.Windows.Forms.OpenFileDialog"/>, 
+            <see cref="T:System.Windows.Forms.SaveFileDialog"/>, <see cref="T:System.Windows.Forms.FontDialog"/> etc.
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.CustomBackgroundPaint">
+            <summary>
+            Specifies whether to enable custom background painting, this only applies to the client region 
+            of the <see cref="T:System.Windows.Forms.Form"/>, <see cref="T:System.Windows.Forms.Panel"/> and  
+            <see cref="T:System.Windows.Forms.UserControl"/> controls.
+            </summary>
+            <remarks>
+            Normally OSSkin overrides all background painting, when this option is enabled you can override a controls
+            <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)"/> and <see cref="M:System.Windows.Forms.Control.OnPaintBackground(System.Windows.Forms.PaintEventArgs)"/> 
+            methods in order to owner draw your own custom graphics.
+            </remarks>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.SkinSystemControls">
+            <summary>
+            Specifies whether to skin all native system controls and dialogs.
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.ToolStripStyle">
+            <summary>
+            Specifies what <see cref="T:System.Windows.Forms.ToolStrip"/> render style to use.
+            Use <see cref="F:SkinSoft.OSSkin.ToolStripRenderStyle.System"/> to render toolstrips with skinned elements.<para></para>
+            Use <see cref="F:SkinSoft.OSSkin.ToolStripRenderStyle.Professional"/> to render toolstrips with professional skinned colors.<para></para>
+            Use <see cref="F:SkinSoft.OSSkin.ToolStripRenderStyle.Mixed"/> to render toolstrips with a combination of system and professional styles.<para></para>
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.ShadowStyle">
+            <summary>
+            Specifies the shadow style to apply to all forms.
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.ShadowVisible">
+            <summary>
+            Specifies whether the form shadow is visible. The form shadow is a translucent
+            drop shadow effect applied to all application forms.
+            </summary>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.HookSystemDrawing">
+            <summary>
+            Specifies whether to skin parts that are directly drawn by the OS platform.
+            </summary>
+            <remarks>
+            This is an advanced feature that enables OSSKin to skin custom controls and drawing.
+            </remarks>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.HookSystemColors">
+            <summary>
+            Specifies whether to override system colors and replace them with the skin palette.
+            </summary>
+            <remarks>
+            This is an advanced that enables OSSkin to override the <see cref="T:System.Drawing.SystemColors"/>
+            and replace them with the skinned palette.
+            </remarks>
+        </member>
+        <member name="P:SkinSoft.OSSkin.OSSkin.UseSystemFonts">
+            <summary>
+            Specifies whether to use system fonts in place of the skin fonts.
+            </summary>
+        </member>
+    </members>
+</doc>
